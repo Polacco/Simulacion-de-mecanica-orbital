@@ -30,6 +30,19 @@ public:
 
         return r_vector.normalized() * forceMagnitude;
     }
+
+    void applyForce(Vector3 force) { // aceleracion
+        // a = F / m
+        acceleration = acceleration + (force * (1.0 / mass));
+    }
+
+    void update(double dt) { // velocidad nueva
+        velocity = velocity + (acceleration * dt);
+        
+        position = position + (velocity * dt); //nueva posicion
+        
+        acceleration = Vector3(0, 0, 0);
+    }
 };
 
 #endif
