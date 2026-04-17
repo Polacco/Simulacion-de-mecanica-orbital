@@ -1,38 +1,56 @@
-#include <iostream>
+#include "raylib.h"
+#include "Body.hpp"
 #include <vector>
-#include <iomanip>
-#include "../include/Body.hpp"
 
 int main() {
-    // Datos reales (aprox)
-    double earthMass = 5.972e24;
-    double satelliteMass = 1000.0; // 1 tonelada
-    
-    // Posición: 7000km desde el centro de la Tierra (órbita baja)
-    // Velocidad: ~7500 m/s es la velocidad orbital necesaria
-    Body earth("Tierra", earthMass, Vector3(0, 0, 0), Vector3(0, 0, 0));
-    Body sat("Sputnik", satelliteMass, Vector3(7000000, 0, 0), Vector3(0, 7500, 0));
+    const int screenWidth = 1200;
+    const int screenHeight = 800;
+    InitWindow(screenWidth, screenHeight, "Simulador de Mecanica Orbital");
 
-    double dt = 10.0; // Saltos de 10 segundos
-    int totalSteps = 1000;
+    Camera3D camera = { 0 };
+    camera.position = { 20.0f, 20.0f, 20.0f }; 
+    camera.target = { 0.0f, 0.0f, 0.0f };      
+    camera.up = { 0.0f, 1.0f, 0.0f };          
+    camera.fovy = 45.0f;                                
+    camera.projection = CAMERA_PERSPECTIVE;
 
-    std::cout << std::fixed << std::setprecision(2);
-    std::cout << "Simulando órbita..." << std::endl;
+    double scale = 1e-6; 
 
-    for (int i = 0; i < totalSteps; ++i) {
-        // 1. Calcular fuerza que la Tierra ejerce sobre el satélite
-        Vector3 forceOnSat = sat.calculateGravitationalForce(earth);
+    Phys::Body earth("Tierra", 5.972e24, Phys::Vector3(0, 0, 0), Phys::Vector3(0, 0, 0));
+    Phys::Body sat("Sputnik", 1000.0, Phys::Vector3(8000000, 0, 0), Phys::Vector3(0, 7500, 0));
+
+    SetTargetFPS(60);
+
+    while (!WindowShouldClose()) {
+        double dt = 100.0; 
         
-        // 2. Aplicar y actualizar
-        sat.applyForce(forceOnSat);
+        Phys::Vector3 force = sat.calculateGravitationalForce(earth);
+        sat.applyForce(force);
         sat.update(dt);
 
-        // Imprimir cada 100 pasos para no saturar la consola
-        if (i % 100 == 0) {
-            std::cout << "Paso " << i << " - Posicion Sat: (" 
-                      << sat.position.x << ", " << sat.position.y << ")" << std::endl;
-        }
+        BeginDrawing();
+            ClearBackground(BLACK);
+            BeginMode3D(camera);
+                
+                DrawSphere({0, 0, 0}, 2.0f, BLUE); 
+                DrawSphereWires({0, 0, 0}, 2.1f, 16, 16, DARKBLUE);
+
+                Vector3 satPos = Vector3{ 
+                    static_cast<float>(sat.position.x * scale), 
+                    static_cast<float>(sat.position.y * scale), 
+                    static_cast<float>(sat.position.z * scale) 
+                };
+                
+                DrawSphere(satPos, 0.3f, RED);
+                DrawGrid(20, 1.0f);
+
+            EndMode3D();
+
+            DrawText("Simulacion Orbital v0.1", 10, 10, 20, RAYWHITE);
+            DrawFPS(10, 40);
+        EndDrawing();
     }
 
+    CloseWindow();
     return 0;
 }

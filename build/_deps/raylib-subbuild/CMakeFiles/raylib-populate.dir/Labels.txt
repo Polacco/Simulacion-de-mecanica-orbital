@@ -1,0 +1,14 @@
+# Target labels
+ raylib-populate
+# Source files and their labels
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/ddfb1a8303ff78e4ab53a08bde8f9042/raylib-populate.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/3fc1502bb6b4bec915e682459d0ab5f6/raylib-populate-complete.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-build.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-configure.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-download.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-install.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-mkdir.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-patch.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-test.rule
+C:/Joaquin/mecanica-orbital/build/_deps/raylib-subbuild/CMakeFiles/0ffa67af9c66076b48cfc0821b90f274/raylib-populate-update.rule

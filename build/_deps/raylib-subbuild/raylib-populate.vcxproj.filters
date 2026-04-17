@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\0ffa67af9c66076b48cfc0821b90f274\raylib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\3fc1502bb6b4bec915e682459d0ab5f6\raylib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\ddfb1a8303ff78e4ab53a08bde8f9042\raylib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\raylib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8616A00B-1459-39B2-B2F0-AF99DFFCD600}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

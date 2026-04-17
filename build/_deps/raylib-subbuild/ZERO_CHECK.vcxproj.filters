@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Joaquin\mecanica-orbital\build\_deps\raylib-subbuild\CMakeFiles\ddfb1a8303ff78e4ab53a08bde8f9042\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8616A00B-1459-39B2-B2F0-AF99DFFCD600}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
